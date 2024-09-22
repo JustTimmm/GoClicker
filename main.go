@@ -37,9 +37,8 @@ func AutoClicker(interval time.Duration, wg *sync.WaitGroup) {
 
 func main() {
 	devMod := false
-	if devMod {
-		GoColor.SuccessLog("GoClicker started ✨ \n")
-	}
+
+	GoColor.SuccessLog("GoClicker started ✨ \n")
 
 	a := app.New()
 	w := a.NewWindow("GoClicker")
